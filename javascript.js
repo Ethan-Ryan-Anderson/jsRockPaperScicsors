@@ -36,17 +36,16 @@ function setplay(choice) {
     player = 0;
     setpc();
     play();
-  } 
-  else if (choice == 1) {
+  } else if (choice == 1) {
     player = 1;
     setpc();
     play();
-  } 
-  else if (choice == 2) {
+  } else if (choice == 2) {
     player = 2;
     setpc();
     play();
   }
+
 }
 
 function tryagain() {
@@ -57,47 +56,38 @@ function setpc() {
   pc = Math.floor(Math.random() * 3);
 }
 
-
-
 function play() {
-  playerpick.innerHTML = "Player Pick : " + player;
-  pcpick.innerHTML = "PC Pick : " + pc;
+
 
   if (player == pc) {
     rndresult = "Tie This Round";
-  } 
-  else if (player == 0 && pc == 1) {
+  } else if (player == 0 && pc == 1) {
     result.innerHTML = "PC Wins";
     pcscore = pcscore + 1;
     console.log("PC Score: " + pcscore);
     pcscoreH3.innerHTML = "PC Score: " + pcscore;
     rndresult = "PC Wins this Round";
-  } 
-  else if (player == 0 && pc == 2) {
+  } else if (player == 0 && pc == 2) {
     playscore = playscore + 1;
     console.log("Player Score: " + playscore);
     playscoreH3.innerHTML = "Player Score: " + playscore;
     rndresult = "Player Wins this Round";
-  } 
-  else if (player == 1 && pc == 0) {
+  } else if (player == 1 && pc == 0) {
     playscore = playscore + 1;
     console.log("Player Score: " + playscore);
     playscoreH3.innerHTML = "Player Score: " + playscore;
     rndresult = "Player Wins this Round";
-  } 
-  else if (player == 1 && pc == 2) {
+  } else if (player == 1 && pc == 2) {
     pcscore = pcscore + 1;
     console.log("PC Score: " + pcscore);
     pcscoreH3.innerHTML = "PC Score: " + pcscore;
     rndresult = "PC Wins this Round";
-  } 
-  else if (player == 2 && pc == 0) {
+  } else if (player == 2 && pc == 0) {
     pcscore = pcscore + 1;
     console.log("PC Score: " + pcscore);
     pcscoreH3.innerHTML = "PC Score: " + pcscore;
     rndresult = "PC Wins this Round";
-  } 
-  else if (player == 2 && pc == 1) {
+  } else if (player == 2 && pc == 1) {
     playscore = playscore + 1;
     console.log("Player Score: " + playscore);
     playscoreH3.innerHTML = "Player Score: " + playscore;

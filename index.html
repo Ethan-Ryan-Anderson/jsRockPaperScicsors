@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="javascript.js"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<!--make a input where the placeholder text blinks-->
-
-<body>
-
-</body>
+    <script src="javascript.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Rock Paper Scissors</h1>
+    <h2 id="result">Result:</h2>
+    <h3 id="playerscoreH3">Player Score:</h3>
+    <h3 id="pcscoreH3">PC Score:</h3>
+    <div id="gamecont">
+      <p id="p">Please Choose A Play</p>
+      <button class="button" onclick="ply()" id="playbtn">play</button>
+      <div id="btns">
+        <button class="button" onclick="setplay(0)">Rock</button>
+        <button class="button" onclick="setplay(1)">Paper</button>
+        <button class="button" onclick="setplay(2)">Scissors</button>
+      </div>
+    </div>
+    <div id="playagain">
+      <button class="pbtn" onclick="tryagain()">try again?</button>
+    </div>
+  </body>
 </html>
